@@ -24,7 +24,7 @@ Excel is een rekenprogramma, waarmee je zeer geavanceerde berekeningen kunt make
 
 Deelopdracht 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-In Excel begin je een berekening met een is-gelijkteken ``=``. Typ in cel B3 de berekening ``=258 + 713`` en druk op Enter. Excel zal automatisch het resultaat van deze berekening tonen in cel B3.
+In Excel begint een berekening altijd met een is-gelijkteken ``=``. Typ in cel B3 de berekening ``=258 + 713`` en druk op Enter. Excel zal automatisch het resultaat van deze berekening tonen in cel B3.
 
 .. figure:: images/opdracht_01_01.png
    :width: 800px
