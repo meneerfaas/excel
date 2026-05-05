@@ -68,13 +68,15 @@ Uiteraard hadden we de vermenigvuldiging met 100 in de formule kunnen verwerken,
 * Klik in het lint (die brede knoppenbalk bovenin beeld) op de procentknop.
 
 .. figure:: images/celopmaak_percentage.png
-   :figwidth: 300px
+   :class: image-border
+   :figwidth: 200px
    :align: center
 
 Excel toont de waarden in kolom D nu als percentages afgerond op gehelen. Wil je afronden op 1 decimaal, dan kan dat met de 'meer decimalen' knop:
-
+   
 .. figure:: images/celopmaak_decimalen.png
-   :figwidth: 300px
+   :class: image-border
+   :figwidth: 200px
    :align: center
 
 Probeer nu zelf in kolom E de percentages van 2019 te berekenen.
@@ -86,14 +88,14 @@ Probeer nu zelf in kolom E de percentages van 2019 te berekenen.
    In Excel bevinden veel handige functies zich ook onder de rechtermuisknop. Selecteer de cellen D6 t/m D18 en klik daarna met de rechtermuisknop in je selectie. Kies vervolgens voor :guilabel:`Celeigenschappen`. Je kunt dan de getalnotatie instellen en nog veel meer.
 
    .. figure:: images/celeigenschappen.png
-      :figwidth: 400px
+      :figwidth: 600px
       :align: center
 
 Je zou nu de volgende tabel moeten hebben:
 
 .. figure:: images/tabel_03.png
    :class: image-border
-   :figwidth: 600px
+   :figwidth: 800px
    :align: center
 
 Procentuele toe- of afname
@@ -108,7 +110,7 @@ Het resultaat zou er zo moeten uitzien:
 
 .. figure:: images/tabel_04.png
    :class: image-border
-   :figwidth: 400px
+   :figwidth: 350px
    :align: center
 
 Maar wacht eens even, procentuele verandering berekenen we toch op een andere manier? De formule die je hebt geleerd is
@@ -134,7 +136,7 @@ Je tabel zou er nu zo moeten uitzien:
 
 .. figure:: images/tabel_05.png
    :class: image-border
-   :figwidth: 600px
+   :figwidth: 800px
    :align: center
 
 Kun je nu uitspraken doen over welke partij het meest heeft gewonnen en welke het meest verloren bij deze verkiezingen?
@@ -155,7 +157,7 @@ Het cirkeldiagram wordt ingevoegd, maar ziet er nog niet heel mooi uit. Doe in e
 
 .. figure:: images/legenda.png
    :class: image-border
-   :figwidth: 400px
+   :figwidth: 350px
    :align: center
 
 * Vink ook Gegevenslabels aan om de percentages in het diagram te tonen.
