@@ -22,9 +22,7 @@ language = 'nl'
 
 extensions = ['sphinx_design',
               'myst_parser',
-              'sphinxcontrib.plantuml',
-              'sphinx_togglebutton',
-              'sphinxcontrib.exceltable']
+              'sphinxcontrib.plantuml']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
