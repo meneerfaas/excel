@@ -23,4 +23,4 @@ Deelopdracht 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. exceltable:: 01 Excel basis.xlsx
-   :file: ../assets/01 Excel basis.xlsx
+   :file: assets/01_excel_basis.xlsx
