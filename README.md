@@ -1,4 +1,3 @@
-# Documentation example
+# Werken met Excel
 
-We use this example in the lesson
-[How to document your research software](https://coderefinery.github.io/documentation/).
+Sphinx repository voor lesmateriaal over werken met Excel
