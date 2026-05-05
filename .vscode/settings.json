@@ -1,0 +1,7 @@
+{
+    "esbonio.sphinx.pythonCommand": ["./env/python"],
+    "esbonio.sphinx.buildTriggers": {
+        "onSave": true,
+        "onChange": 2.0
+    }
+}
