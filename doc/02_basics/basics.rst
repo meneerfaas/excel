@@ -46,3 +46,16 @@ Rechtstreeks getallen typen in een berekening zoals bij deelopdracht 1 doe je in
    :width: 800px
    :align: center
 
+.. dropdown:: Antwoorden controleren
+    :color: primary
+    :icon: check-circle
+
+    .. image:: images/opdracht_02_02.png
+
+.. dropdown:: Typen of klikken?
+    :color: info
+    :icon: info
+
+    Je kunt de cellen waarnaar je wilt verwijzen in een berekening ook met de muis aanklikken in plaats van ze te typen. Dus in plaats van ``=A10 + A11`` kun je ook ``=`` typen, vervolgens op cel A10 klikken, dan het plus-teken ``+`` typen, en vervolgens op cel A11 klikken. Excel zal automatisch de juiste celverwijzingen toevoegen aan je berekening.
+
+    Tevens is het mogelijk om met de pijltjestoetsen op je toetsenbord te navigeren naar de cellen waarnaar je wilt verwijzen.
