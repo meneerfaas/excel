@@ -20,3 +20,4 @@ Begin nu met het onderdeel Voorbereidingen.
    02_basics/basics
    03_stroomsnelheid/stroomsnelheid
    04_kanoen/kanoen
+   05_waterschapsverkiezingen/waterschapsverkiezingen

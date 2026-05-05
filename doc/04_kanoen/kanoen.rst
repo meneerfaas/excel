@@ -164,6 +164,8 @@ Excel heeft de formule uit F6 niet alleen gekopieerd, maar ook de cellen die de 
    :figwidth: 700px
    :align: center
 
+.. _celverwijzingen_vergrendelen:
+
 Uiteraard is er een oplossing voor dit probleem. Je kunt in een formule cellen *vergrendelen* zodat ze niet verschuiven bij kopiëren. Dit doe je als volgt:
 
 * Dubbelklik op cel F6 om de formule te bewerken.
@@ -272,3 +274,5 @@ Als je alles goed hebt gedaan, is je histogram nu klaar en ziet er ongeveer zo u
    :class: image-border
    :figwidth: 500px
    :align: center
+
+Dit is het einde van de opdracht *Kanoën*. Ga door met de volgende opdracht: *Waterschapsverkiezingen*.
