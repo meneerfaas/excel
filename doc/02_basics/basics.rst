@@ -3,7 +3,7 @@ Basisbeginselen van Excel
 
 Bestand openen
 -------------------------
-Open het bestand :file:`01 Excel basis.xlsx` dat je eerder hebt gedownload en in de map :file:`Dommelproject` hebt geplaatst. Je kunt dit bestand openen door er op te dubbelklikken in de Verkenner, of door Excel te openen en vervolgens via het menu naar het bestand te navigeren.
+Open het bestand :file:`01 Excel basis.xlsx` dat je eerder hebt gedownload en in de map :file:`Dommelproject` hebt geplaatst. Je kunt dit bestand openen door er op te dubbelklikken in de Verkenner, of door Excel te openen en vervolgens via het menu naar het bestand te navigeren (:menuselection:`Bestand` --> `Openen`).
 
 .. figure:: images/explorer.png
     :class: border
@@ -150,7 +150,9 @@ Als je het goed hebt gedaan, zijn de uitkomsten in D46 t/m D49 meeveranderd.
 
     Je vindt hier de getallen 0 t/m 9, maar ook de plus ``+``, min ``-``, sterretje ``*`` en schuine streep ``/`` tekens die je nodig hebt voor het invoeren van berekeningen in Excel. Zorg ervoor dat je Num Lock aan hebt staan, anders werken deze toetsen niet.
 
-    Als je op :kbd:`Enter` drukt nadat je een getal hebt ingevoerd, springt de selectie automatisch naar de volgende cel. Soms is dat echter naar rechts, terwijl je juist naar beneden wilt. Dit kun je instellen via :guilabel:`Bestand > Opties > Geavanceerd > Selectie verplaatsen nadat ENTER is ingedrukt` en vervolgens de gewenste richting selecteren.
+    Als je op :kbd:`Enter` drukt nadat je een getal hebt ingevoerd, springt de selectie automatisch naar de volgende cel. Soms is dat echter naar rechts, terwijl je juist naar beneden wilt. Dit kun je instellen via :menuselection:`Bestand --> Opties --> Geavanceerd --> Selectie verplaatsen nadat ENTER is ingedrukt` en vervolgens de gewenste richting selecteren.
 
     .. figure:: images/excel_selectie_verplaatsen.png
        :align: center
+
+Dit is het einde van de eerste oefenopdracht. In de volgende oefenopdracht *Stroomsnelheid* ga je aan de slag met het invoeren van data en het maken van diagrammen in Excel.
