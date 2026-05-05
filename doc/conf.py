@@ -44,7 +44,8 @@ html_theme_options = {
     },
     "footer_start": ["sphinx-version"],
     "footer_center": ["copyright"],
-    "footer_end": ["theme-version"]
+    "footer_end": ["theme-version"],
+    "collapse_navigation": True
 }
 html_favicon = "_static/favicon.png"
 
