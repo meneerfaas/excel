@@ -10,6 +10,8 @@ Bij het onderdeel wiskunde van het Dommelproject ga je aan de slag met Excel. Ee
 
 De resultaten van de eindopdracht dienen te worden verwerkt in de Dommelprojectposter van je groepje.
 
+Begin nu met het onderdeel Voorbereidingen.
+
 .. toctree::
    :maxdepth: 2
    :caption: Inhoudsopgave:

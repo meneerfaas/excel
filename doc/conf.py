@@ -14,12 +14,17 @@ project = 'Werken met Excel'
 copyright = '2026, S. Faas'
 author = 'S. Faas'
 release = '0.1'
+language = 'nl'
 
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_design', 'myst_parser', 'sphinxcontrib.plantuml']
+extensions = ['sphinx_design',
+              'myst_parser',
+              'sphinxcontrib.plantuml',
+              'sphinx_togglebutton',
+              'sphinxcontrib.exceltable']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
@@ -30,6 +35,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+html_css_files = ['custom.css']
 html_theme_options = {
     "logo": {
         "text": "Werken met Excel",

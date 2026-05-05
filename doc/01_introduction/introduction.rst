@@ -28,9 +28,9 @@ Bronbestanden downloaden
 
 Download de volgende Excelbestanden:
 
-* :download:`01 Excel basis <assets/01 Excel basis.xlsx>`
-* :download:`02 Dommel opdrachten <assets/02 Dommel opdrachten.xlsx>`
-* :download:`03 Eindopdracht <assets/03 Eindopdracht.xlsx>`
+* :download:`01 Excel basis <../assets/01 Excel basis.xlsx>`
+* :download:`02 Dommel opdrachten <../assets/02 Dommel opdrachten.xlsx>`
+* :download:`03 Eindopdracht <../assets/03 Eindopdracht.xlsx>`
 
 Na het downloaden staan deze bestanden waarschijnlijk in je map :file:`Downloads`. Verplaats ze naar de map :file:`Dommelproject` die je zojuist hebt aangemaakt.
 
