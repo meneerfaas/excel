@@ -19,3 +19,4 @@ Begin nu met het onderdeel Voorbereidingen.
    01_introduction/introduction
    02_basics/basics
    03_stroomsnelheid/stroomsnelheid
+   04_kanoen/kanoen
