@@ -22,7 +22,8 @@ language = 'nl'
 
 extensions = ['sphinx_design',
               'myst_parser',
-              'sphinxcontrib.plantuml']
+              'sphinxcontrib.plantuml',
+              'sphinx_new_tab_link']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']

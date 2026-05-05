@@ -17,3 +17,4 @@ Begin nu met het onderdeel Voorbereidingen.
    :caption: Inhoudsopgave:
 
    01_introduction/introduction
+   02_basics/basics
