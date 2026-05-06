@@ -19,11 +19,7 @@ Let op: voor deze opdracht blijf je werken in het bestand :file:`02 Dommel opdra
 
 Kolombreedte aanpassen
 ---------------------------------------
-Kasper en Nora lopen stage bij het waterschap en hebben een dag van 8.00 uur tot 20.00 uur bij de brug bij de Ruwenberg gezeten om te tellen hoeveel kano's voorbij voeren. Ze werkten daarbij met blokken van een kwartier. In werkblad ``Opdracht 3`` vind je de resultaten.
-
-.. figure:: images/werkblad.png
-   :width: 300px
-   :align: center
+Kasper en Nora lopen stage bij het waterschap en hebben een dag van 8.00 uur tot 20.00 uur bij de brug bij de Ruwenberg gezeten om te tellen hoeveel kano's voorbij voeren. Ze werkten daarbij met blokken van een kwartier. In werkblad ``Kanoën`` vind je de resultaten.
 
 Je ziet dat de tijdblokken niet helemaal zichtbaar zijn, doordat kolom A eigenlijk te smal is. Pas dit aan door met de muiscursor op het verticale streepje tussen de kolomtitels A en B te gaan staan. De cursor verandert dan in een dubbele pijl. Sleep het streepje naar rechts om kolom A breder te maken.
 
