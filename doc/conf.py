@@ -44,10 +44,10 @@ html_theme_options = {
     },
     "footer_start": ["sphinx-version"],
     "footer_center": ["copyright"],
-    "footer_end": ["theme-version"],
-    "collapse_navigation": True
+    "footer_end": ["theme-version"]
 }
 html_favicon = "_static/favicon.png"
+html_sidebars = {"**": []}
 
 # -- Options for plantuml
 local_plantuml_path = os.path.join(os.path.dirname(
