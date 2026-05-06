@@ -1,5 +1,5 @@
-Basisbeginselen van Excel
-=========================
+Oefenopdracht Excel basics
+===========================
 
 Bestand openen
 -------------------------
