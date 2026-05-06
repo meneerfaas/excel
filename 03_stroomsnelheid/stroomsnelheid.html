@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+
+
+<html lang="nl" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oefenopdracht Stroomsnelheid &#8212; Werken met Excel 0.1 documentatie</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=103464f3" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=a57088fb"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=e4d38c6a"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_stroomsnelheid/stroomsnelheid';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Oefenopdracht Kanoën" href="../04_kanoen/kanoen.html" />
+    <link rel="prev" title="Oefenopdracht Excel basics" href="../02_basics/basics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="nl"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/excel_128.png" class="logo__image only-light" alt="Werken met Excel"/>
+    <img src="../_static/excel_128.png" class="logo__image only-dark pst-js-only" alt="Werken met Excel"/>
+  
+  
+    <p class="title logo__title">Werken met Excel</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../01_introduction/introduction.html">
+    Voorbereidingen
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../02_basics/basics.html">
+    Oefenopdracht Excel basics
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Oefenopdracht Stroomsnelheid
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../04_kanoen/kanoen.html">
+    Oefenopdracht Kanoën
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../05_waterschapsverkiezingen/waterschapsverkiezingen.html">
+    Oefenopdracht Waterschapsverkiezingen
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Zoeken" aria-label="Zoeken" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Zoeken</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Zoeken" aria-label="Zoeken" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Zoeken</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../01_introduction/introduction.html">
+    Voorbereidingen
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../02_basics/basics.html">
+    Oefenopdracht Excel basics
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Oefenopdracht Stroomsnelheid
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../04_kanoen/kanoen.html">
+    Oefenopdracht Kanoën
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../05_waterschapsverkiezingen/waterschapsverkiezingen.html">
+    Oefenopdracht Waterschapsverkiezingen
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Oefenopdracht Stroomsnelheid</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="oefenopdracht-stroomsnelheid">
+<h1>Oefenopdracht Stroomsnelheid<a class="headerlink" href="#oefenopdracht-stroomsnelheid" title="Link to this heading">#</a></h1>
+<img alt="Dommel" class="align-right" src="../_images/dommel.png" style="width: 240px;" />
+<p>Nu je basisberekeningen in Excel onder de knie hebt, kunnen we ons richten op de Dommel. Deze beek (en verder stroomafwaarts een kleine rivier) begint in België ten zuiden van Peer en komt bij Borkel en Schaft Nederland binnen. In ‘s-Hertogenbosch komen de rivier de Aa en de Dommel samen en vormen de Dieze, die uiteindelijk uitmondt in de Maas.</p>
+<p>Op de <a class="reference external" href="https://www.natuurmonumenten.nl/natuurgebieden/dommeldal/bezienswaardigheden/over-de-dommel" rel="noreferrer" target="_blank">website van Natuurmonumenten</a>  wordt beweerd dat het water in de  Dommel gemiddeld met 0,5 à 1 meter per seconde stroomt. In deze oefenopdracht ga je onderzoek doen naar de stroomsnelheid van de Dommel bij Sint-Michielsgestel. Daarbij maak je kennis met enkele basisvaardigheden in Excel en je leert hoe je een staafdiagram invoegt in een werkblad.</p>
+<section id="werkbladen">
+<h2>Werkbladen<a class="headerlink" href="#werkbladen" title="Link to this heading">#</a></h2>
+<p>Je kunt het bestand <code class="file docutils literal notranslate"><span class="pre">01</span> <span class="pre">Excel</span> <span class="pre">basis.xlsx`</span></code> uit de vorige opdracht sluiten. Open nu het bestand <code class="file docutils literal notranslate"><span class="pre">02</span> <span class="pre">Dommel</span> <span class="pre">opdrachten.xlsx</span></code>. Een bestand wordt in Excel een <em>werkmap</em> genoemd. In die werkmap bevinden zich <em>werkbladen</em>. Onderin je scherm zie je de tabbladen staan waarmee je tussen de werkbladen kunt schakelen. Zorg dat voor deze opdracht werkblad <code class="docutils literal notranslate"><span class="pre">Stroomsnelheid</span></code> actief is.</p>
+<img alt="Werkbladen" class="align-center" src="../_images/werkblad_stroomsnelheid.png" style="width: 500px;" />
+</section>
+<section id="data-invoeren">
+<h2>Data invoeren<a class="headerlink" href="#data-invoeren" title="Link to this heading">#</a></h2>
+<p>Bij de fietsbrug bij de Ruwenberg in Sint-Michielsgestel bevindt zich een meetpunt voor de stroomsnelheid van de Dommel. Van de periode 2009-2017 zijn de volgende maandgemiddelden (in meter per seconde) berekend:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">Gemiddelde stroomsnelheid van de Dommel bij Sint-Michielsgestel 2009-2017</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>Maand</p></th>
+<td><p>jan</p></td>
+<td><p>feb</p></td>
+<td><p>mrt</p></td>
+<td><p>apr</p></td>
+<td><p>mei</p></td>
+<td><p>jun</p></td>
+<td><p>jul</p></td>
+<td><p>aug</p></td>
+<td><p>sep</p></td>
+<td><p>okt</p></td>
+<td><p>nov</p></td>
+<td><p>dec</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Stroomsnelheid (m/s)</p></th>
+<td><p>0,25</p></td>
+<td><p>0,24</p></td>
+<td><p>0,22</p></td>
+<td><p>0,16</p></td>
+<td><p>0,20</p></td>
+<td><p>0,18</p></td>
+<td><p>0,12</p></td>
+<td><p>0,15</p></td>
+<td><p>0,19</p></td>
+<td><p>0,17</p></td>
+<td><p>0,17</p></td>
+<td><p>0,21</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Je ziet dat in Excel de maanden al zijn ingevuld, maar de tabel staat verticaal in plaats van horizontaal zoals hierboven. Dat is gebruikelijk in Excel en als je je aan dit gebruik houdt, is het invoegen van diagrammen later gemakkelijker.</p>
+<p>Voer nu zelf de gemiddelde snelheden uit de bovenstaande tabel in in de cellen B6 t/m B17 in Excel.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header sd-bg-info sd-bg-text-info">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-info" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span><span class="sd-summary-text">Handig getallen invoeren</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<img alt="../_images/keyboard_numerical1.png" class="align-right" src="../_images/keyboard_numerical1.png" style="width: 100px;" />
+<p class="sd-card-text">Gebruik voor het invoeren van getallen in Excel het numerieke gedeelte van je toetsenbord (zorg dat Numlock aan staat). Van de punt maakt Excel automatisch een komma en als je op Enter drukt, ga je naar de volgende cel. Gaat de celselectie naar rechts in plaats van naar beneden wanneer je op Enter drukt? Dat kun je aanpassen via <span class="menuselection">Bestand ‣ Opties ‣ Geavanceerd</span>.</p>
+<img alt="../_images/opties_selectie_verplaatsen.png" class="align-center border" src="../_images/opties_selectie_verplaatsen.png" style="width: 400px;" />
+</div>
+</details></section>
+<section id="diagram-invoegen">
+<h2>Diagram invoegen<a class="headerlink" href="#diagram-invoegen" title="Link to this heading">#</a></h2>
+<p>Excel kan allerlei soorten diagrammen maken bij de data die je invoert. Voor deze opdracht ga je een <em>staafdiagram</em> invoegen.</p>
+<ul class="simple">
+<li><p>Selecteer de cellen A5 t/m B17.</p></li>
+<li><p>Ga in de menubalk naar Invoegen en klik op het icoontje van het staafdiagram</p></li>
+<li><p>Kies het grafiektype 2D-kolom en daarbij het eerste subtype (de eerste optie). Zie de afbeelding hieronder.</p></li>
+</ul>
+<figure class="align-center" style="width: 300px">
+<img alt="../_images/staafdiagram_invoegen.png" class="image-border" src="../_images/staafdiagram_invoegen.png" />
+</figure>
+<p>Je ziet dat Excel behoorlijk intelligent is en de juiste informatie op de horizontale en verticale assen heeft gezet. Er is zelfs een titel boven het diagram geplaatst.</p>
+<figure class="align-center" style="width: 400px">
+<img alt="../_images/staafdiagram_01.png" class="image-border" src="../_images/staafdiagram_01.png" />
+</figure>
+<p>Er valt echter nog wel iets te verbeteren. Eigenlijk is de titel boven het diagram meer geschikt als astitel bij de verticale as. Maak daarom de volgende aanpassingen:</p>
+<ul class="simple">
+<li><p>Wijzig de titel in <em>Stroomsnelheid Dommel</em> en op een nieuwe regel eronder <em>Ruwenberg 2009-2017</em> (eventueel in een wat kleiner lettertype).</p></li>
+<li><p>Selecteer het diagram en klik op het ➕ knopje dat rechtsboven het diagram verschijnt. Vink <span class="guilabel">Astitels</span> aan:</p></li>
+</ul>
+<figure class="align-center" style="width: 600px">
+<img alt="../_images/staafdiagram_astitels.png" class="image-border" src="../_images/staafdiagram_astitels.png" />
+</figure>
+<ul class="simple">
+<li><p>Zet vervolgens bij de verticale as de titel <em>Snelheid [m/s]</em>. Bij de horizontale as kun je het astitelvakje verwijderen, want de maanden spreken voor zich.</p></li>
+</ul>
+<p>Als het goed is, heb je nu het onderstaande diagram.</p>
+<figure class="align-center" style="width: 400px">
+<img alt="../_images/staafdiagram_02.png" class="image-border" src="../_images/staafdiagram_02.png" />
+</figure>
+<p>Je kunt het diagram naar eigen inzicht nog verder verfraaien. Ga in de menubalk maar eens naar <span class="guilabel">Grafiekontwerp</span> (dat is alleen zichtbaar als je het diagram hebt geselecteerd). Je ziet dan opties om onder andere de kleur te veranderen en om een andere grafiekstijl te kiezen, bijvoorbeeld met schaduwen. Experimenteer hiermee.</p>
+<figure class="align-center" style="width: 800px">
+<img alt="../_images/grafiekontwerp.png" class="image-border" src="../_images/grafiekontwerp.png" />
+</figure>
+<p>Dit is het einde van de oefenopdracht <em>Stroomsnelheid</em>. Ga door met de volgende opdracht: <em>Kanoën</em>.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../02_basics/basics.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">vorige</p>
+        <p class="prev-next-title">Oefenopdracht Excel basics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../04_kanoen/kanoen.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Oefenopdracht Kanoën</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkbladen">Werkbladen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-invoeren">Data invoeren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram-invoegen">Diagram invoegen</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/03_stroomsnelheid/stroomsnelheid.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Broncode weergeven
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, S. Faas.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

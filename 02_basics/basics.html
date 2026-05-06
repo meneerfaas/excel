@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+
+<html lang="nl" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oefenopdracht Excel basics &#8212; Werken met Excel 0.1 documentatie</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=103464f3" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=a57088fb"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=e4d38c6a"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_basics/basics';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Oefenopdracht Stroomsnelheid" href="../03_stroomsnelheid/stroomsnelheid.html" />
+    <link rel="prev" title="Voorbereidingen" href="../01_introduction/introduction.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="nl"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/excel_128.png" class="logo__image only-light" alt="Werken met Excel"/>
+    <img src="../_static/excel_128.png" class="logo__image only-dark pst-js-only" alt="Werken met Excel"/>
+  
+  
+    <p class="title logo__title">Werken met Excel</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../01_introduction/introduction.html">
+    Voorbereidingen
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Oefenopdracht Excel basics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../03_stroomsnelheid/stroomsnelheid.html">
+    Oefenopdracht Stroomsnelheid
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../04_kanoen/kanoen.html">
+    Oefenopdracht Kanoën
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../05_waterschapsverkiezingen/waterschapsverkiezingen.html">
+    Oefenopdracht Waterschapsverkiezingen
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Zoeken" aria-label="Zoeken" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Zoeken</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Zoeken" aria-label="Zoeken" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Zoeken</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../01_introduction/introduction.html">
+    Voorbereidingen
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Oefenopdracht Excel basics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../03_stroomsnelheid/stroomsnelheid.html">
+    Oefenopdracht Stroomsnelheid
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../04_kanoen/kanoen.html">
+    Oefenopdracht Kanoën
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../05_waterschapsverkiezingen/waterschapsverkiezingen.html">
+    Oefenopdracht Waterschapsverkiezingen
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Oefenopdracht Excel basics</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="oefenopdracht-excel-basics">
+<h1>Oefenopdracht Excel basics<a class="headerlink" href="#oefenopdracht-excel-basics" title="Link to this heading">#</a></h1>
+<section id="bestand-openen">
+<h2>Bestand openen<a class="headerlink" href="#bestand-openen" title="Link to this heading">#</a></h2>
+<p>Open het bestand <code class="file docutils literal notranslate"><span class="pre">01</span> <span class="pre">Excel</span> <span class="pre">basis.xlsx</span></code> dat je eerder hebt gedownload en in de map <code class="file docutils literal notranslate"><span class="pre">Dommelproject</span></code> hebt geplaatst. Je kunt dit bestand openen door er op te dubbelklikken in de Verkenner, of door Excel te openen en vervolgens via het menu naar het bestand te navigeren (<span class="menuselection">Bestand</span> –&gt; <cite>Openen</cite>).</p>
+<figure class="align-center" style="width: 480px">
+<img alt="../_images/explorer.png" class="border" src="../_images/explorer.png" />
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header sd-bg-warning sd-bg-text-warning">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-alert" viewBox="0 0 16 16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg></span><span class="sd-summary-text">Excel app vs Excel online</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Zorg ervoor dat je het bestand opent in de Excel-app op je computer, en niet in Excel online via je webbrowser. De Excel-app heeft meer functies en werkt sneller dan Excel online, wat belangrijk is voor de opdrachten die je gaat maken.</p>
+</div>
+</details></section>
+<section id="rekenen-in-excel">
+<h2>Rekenen in Excel<a class="headerlink" href="#rekenen-in-excel" title="Link to this heading">#</a></h2>
+<p>Excel is een rekenprogramma, waarmee je zeer geavanceerde berekeningen kunt maken. Maar laten we beginnen met de basisbewerkingen optellen, aftrekken, vermenigvuldigen en delen.</p>
+<section id="deelopdracht-1">
+<h3>Deelopdracht 1<a class="headerlink" href="#deelopdracht-1" title="Link to this heading">#</a></h3>
+<p>In Excel begint een berekening altijd met een is-gelijkteken <code class="docutils literal notranslate"><span class="pre">=</span></code>. Typ in cel B3 de berekening <code class="docutils literal notranslate"><span class="pre">=258</span> <span class="pre">+</span> <span class="pre">713</span></code> en druk op Enter. Excel zal automatisch het resultaat van deze berekening tonen in cel B3.</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_01_01.png" src="../_images/opdracht_01_01.png" style="width: 800px;" />
+</figure>
+<p>Voer op dezelfde manier de gevraagde berekeningen uit in de cellen B4, B5 en B6. Voor optellen en aftrekken gebruik je respectievelijk de plus <code class="docutils literal notranslate"><span class="pre">+</span></code> en min <code class="docutils literal notranslate"><span class="pre">-</span></code> tekens, maar voor vermenigvuldigen gebruik je het sterretje <code class="docutils literal notranslate"><span class="pre">*</span></code> en voor delen de schuine streep <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-primary sd-bg-text-primary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-check-circle" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm1.5 0a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm10.28-1.72-4.5 4.5a.75.75 0 0 1-1.06 0l-2-2a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.47 1.47 3.97-3.97a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg></span><span class="sd-summary-text">Antwoorden controleren</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<img alt="../_images/opdracht_01_02.png" src="../_images/opdracht_01_02.png" />
+</div>
+</details></section>
+<section id="deelopdracht-2">
+<h3>Deelopdracht 2<a class="headerlink" href="#deelopdracht-2" title="Link to this heading">#</a></h3>
+<p>Rechtstreeks getallen typen in een berekening zoals bij deelopdracht 1 doe je in Excel eigenlijk nooit. In plaats daarvan verwijs je naar de cellen waarin de getallen staan. Voer in de cellen D10 t/m D14 de berekeningen uit zoals aangegeven in de cellen C10 t/m C14, en verwijs hierbij naar de cellen A10 t/m A14 in plaats van rechtstreeks getallen te typen. Dus in cel D10 typ je bijvoorbeeld <code class="docutils literal notranslate"><span class="pre">=A10</span> <span class="pre">+</span> <span class="pre">A11</span></code> in plaats van <code class="docutils literal notranslate"><span class="pre">=4</span> <span class="pre">+</span> <span class="pre">6</span></code>.</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_02_01.png" src="../_images/opdracht_02_01.png" style="width: 800px;" />
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-primary sd-bg-text-primary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-check-circle" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm1.5 0a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm10.28-1.72-4.5 4.5a.75.75 0 0 1-1.06 0l-2-2a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.47 1.47 3.97-3.97a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg></span><span class="sd-summary-text">Antwoorden controleren</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<img alt="../_images/opdracht_02_02.png" src="../_images/opdracht_02_02.png" />
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-info sd-bg-text-info">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-info" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span><span class="sd-summary-text">Typen of klikken?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Je kunt de cellen waarnaar je wilt verwijzen in een berekening ook met de muis aanklikken in plaats van ze te typen. Dus in plaats van <code class="docutils literal notranslate"><span class="pre">=A10</span> <span class="pre">+</span> <span class="pre">A11</span></code> kun je ook <code class="docutils literal notranslate"><span class="pre">=</span></code> typen, vervolgens op cel A10 klikken, dan het plus-teken <code class="docutils literal notranslate"><span class="pre">+</span></code> typen, en vervolgens op cel A11 klikken. Excel zal automatisch de juiste celverwijzingen toevoegen aan je berekening.</p>
+<p class="sd-card-text">Tevens is het mogelijk om met de pijltjestoetsen op je toetsenbord te navigeren naar de cellen waarnaar je wilt verwijzen.</p>
+</div>
+</details></section>
+<section id="deelopdracht-3">
+<h3>Deelopdracht 3<a class="headerlink" href="#deelopdracht-3" title="Link to this heading">#</a></h3>
+<p>Het voordeel van het werken met celverwijzingen zoals bij deelopdracht 2 is dat wanneer er een van de getallen in de eerste kolom verandert, de uitkomsten automatisch mee veranderen. Verander het getal in cel A10 naar het getal 2 om dit te controleren. Komen de waarden in D10 t/m D14 overeen met de figuur hieronder? Dan heb je het goed gedaan!</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_03_01.png" src="../_images/opdracht_03_01.png" style="width: 800px;" />
+</figure>
+</section>
+<section id="deelopdracht-4">
+<h3>Deelopdracht 4<a class="headerlink" href="#deelopdracht-4" title="Link to this heading">#</a></h3>
+<p>Je zou nu in staat moeten zijn om met Excel het gemiddelde van vijf getallen te berekenen. Bereken in cel D19 het gemiddelde van de getallen in de cellen A19 t/m A23. Gebruik celverwijzingen en denk ook aan het gebruik van haakjes.</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_04_01.png" src="../_images/opdracht_04_01.png" style="width: 800px;" />
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-primary sd-bg-text-primary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-check-circle" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm1.5 0a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm10.28-1.72-4.5 4.5a.75.75 0 0 1-1.06 0l-2-2a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.47 1.47 3.97-3.97a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg></span><span class="sd-summary-text">Antwoord controleren</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Het gemiddelde is 8.</p>
+<img alt="../_images/opdracht_04_02.png" src="../_images/opdracht_04_02.png" />
+</div>
+</details></section>
+</section>
+<section id="functies-in-excel">
+<h2>Functies in Excel<a class="headerlink" href="#functies-in-excel" title="Link to this heading">#</a></h2>
+<p>Naast losse berekeningen met verschillende cellen in Excel kun je ook gebruik maken van functies in Excel. Zo kun je heel eenvoudig een rijtje getallen optellen of het gemiddelde van een rijtje berekenen. Dit gaan we in de volgende deelopdrachten ontdekken.</p>
+<section id="deelopdracht-5">
+<h3>Deelopdracht 5<a class="headerlink" href="#deelopdracht-5" title="Link to this heading">#</a></h3>
+<p>De optelling van een rijtje getallen noemen we de <strong>som</strong> van die getallen. De som van de getallen 3, 5, en 9 is dus 3 + 5 + 9. In Excel kun je een som natuurlijk helemaal intypen…</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_05_01.png" src="../_images/opdracht_05_01.png" style="width: 800px;" />
+</figure>
+<p>…maar er is een snellere manier om dit te doen. In plaats van de celverwijzingen en plusjes allemaal in te typen, kun je ook gebruik maken van de functie <code class="docutils literal notranslate"><span class="pre">SOM()</span></code>. Deze functie telt automatisch alle getallen op die je tussen de haakjes zet. Om de som van de getallen in de cellen A28 t/m A32 te berekenen, typ je in cel D28 de volgende formule: <code class="docutils literal notranslate"><span class="pre">=SOM(A28:A32)</span></code>. De dubbele punt <code class="docutils literal notranslate"><span class="pre">:</span></code> tussen A28 en A32 geeft aan dat je alle cellen van A28 tot en met A32 wilt meenemen in de som. In plaats van de celverwijzingen te typen, kun je ook de cellen aanklikken en slepen met de muis om ze te selecteren.</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_05_02.png" src="../_images/opdracht_05_02.png" style="width: 800px;" />
+</figure>
+<p>Bereken nu zelf met de functie <code class="docutils literal notranslate"><span class="pre">SOM()</span></code> de gevraagde uitkomst in cel D28 en vervolgens in cel D30 het gemiddelde van de getallen, door de uitkomst in D28 te delen door het aantal getallen (5). Uiteraard zou hier hetzelfde antwoord uit moeten komen als bij deelopdracht 4.</p>
+</section>
+<section id="deelopdracht-6">
+<h3>Deelopdracht 6<a class="headerlink" href="#deelopdracht-6" title="Link to this heading">#</a></h3>
+<p>Bij deelopdracht 5 hebben we gezien dat de functie <code class="docutils literal notranslate"><span class="pre">SOM()</span></code> heel handig is om snel een rijtje getallen op te tellen. Maar er zijn nog veel meer functies in Excel die je kunnen helpen bij het maken van berekeningen. Zo is er ook een functie om het gemiddelde van een rijtje getallen te berekenen, namelijk de functie <code class="docutils literal notranslate"><span class="pre">GEMIDDELDE()</span></code>.</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_06_01.png" src="../_images/opdracht_06_01.png" style="width: 800px;" />
+</figure>
+<p>Bereken in cel D37 het gemiddelde van de getallen in de cellen A37 t/m A41 met behulp van deze functie. Kom je op hetzelfde antwoord uit als bij deelopdracht 4 en 5? Dan heb je het goed gedaan!</p>
+</section>
+<section id="deelopdracht-7">
+<h3>Deelopdracht 7<a class="headerlink" href="#deelopdracht-7" title="Link to this heading">#</a></h3>
+<p>Bij wiskunde heb je wellicht al iets geleerd over de centrummaten <em>gemiddelde</em>, <em>mediaan</em> en <em>modus</em> (zo niet, dan kun je <a class="reference external" href="https://www.slimleren.nl/onderwerpen/rekenen/12.252/centrummaten:-gemiddelde,-mediaan-en-modus" rel="noreferrer" target="_blank">hier</a> informatie vinden). Voor elk van deze centrummaten heeft Excel een functie: <code class="docutils literal notranslate"><span class="pre">GEMIDDELDE()</span></code>, <code class="docutils literal notranslate"><span class="pre">MEDIAAN()</span></code> en <code class="docutils literal notranslate"><span class="pre">MODUS()</span></code> (of <code class="docutils literal notranslate"><span class="pre">MODUS.ENKELV()</span></code>).</p>
+<p>Bereken in de cellen D46 t/m D49 de som, gemiddelde, mediaan en modus van de getallen in de cellen A46 t/m A60. Als het goed is, krijg je de onderstaande uitkomsten.</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_07_01.png" src="../_images/opdracht_07_01.png" style="width: 800px;" />
+</figure>
+</section>
+<section id="deelopdracht-8">
+<h3>Deelopdracht 8<a class="headerlink" href="#deelopdracht-8" title="Link to this heading">#</a></h3>
+<p>Wijzig nu de getallen in A46 t/m A60 als volgt:</p>
+<figure class="align-center">
+<img alt="../_images/opdracht_08_01.png" src="../_images/opdracht_08_01.png" />
+</figure>
+<p>Als je het goed hebt gedaan, zijn de uitkomsten in D46 t/m D49 meeveranderd.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-primary sd-bg-text-primary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-check-circle" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm1.5 0a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm10.28-1.72-4.5 4.5a.75.75 0 0 1-1.06 0l-2-2a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.47 1.47 3.97-3.97a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg></span><span class="sd-summary-text">Antwoorden controleren</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<img alt="../_images/opdracht_08_02.png" src="../_images/opdracht_08_02.png" />
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-info sd-bg-text-info">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-info" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span><span class="sd-summary-text">Handig getallen invoeren</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Bij deelopdracht 8 moest je een reeks waarden invoeren in Excel. Daarvoor kun je het beste gebruik maken van het numerieke gedeelte rechts op je toetsenbord.</p>
+<figure class="align-center">
+<img alt="../_images/keyboard_numerical.png" src="../_images/keyboard_numerical.png" />
+</figure>
+<p class="sd-card-text">Je vindt hier de getallen 0 t/m 9, maar ook de plus <code class="docutils literal notranslate"><span class="pre">+</span></code>, min <code class="docutils literal notranslate"><span class="pre">-</span></code>, sterretje <code class="docutils literal notranslate"><span class="pre">*</span></code> en schuine streep <code class="docutils literal notranslate"><span class="pre">/</span></code> tekens die je nodig hebt voor het invoeren van berekeningen in Excel. Zorg ervoor dat je Num Lock aan hebt staan, anders werken deze toetsen niet.</p>
+<p class="sd-card-text">Als je op <kbd class="kbd docutils literal notranslate">Enter</kbd> drukt nadat je een getal hebt ingevoerd, springt de selectie automatisch naar de volgende cel. Soms is dat echter naar rechts, terwijl je juist naar beneden wilt. Dit kun je instellen via <span class="menuselection">Bestand ‣ Opties ‣ Geavanceerd ‣ Selectie verplaatsen nadat ENTER is ingedrukt</span> en vervolgens de gewenste richting selecteren.</p>
+<figure class="align-center">
+<img alt="../_images/excel_selectie_verplaatsen.png" src="../_images/excel_selectie_verplaatsen.png" />
+</figure>
+</div>
+</details><p>Dit is het einde van de eerste oefenopdracht. In de volgende oefenopdracht <em>Stroomsnelheid</em> ga je aan de slag met het invoeren van data en het maken van diagrammen in Excel.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../01_introduction/introduction.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">vorige</p>
+        <p class="prev-next-title">Voorbereidingen</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../03_stroomsnelheid/stroomsnelheid.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Oefenopdracht Stroomsnelheid</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bestand-openen">Bestand openen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekenen-in-excel">Rekenen in Excel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-1">Deelopdracht 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-2">Deelopdracht 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-3">Deelopdracht 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-4">Deelopdracht 4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functies-in-excel">Functies in Excel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-5">Deelopdracht 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-6">Deelopdracht 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-7">Deelopdracht 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deelopdracht-8">Deelopdracht 8</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_basics/basics.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Broncode weergeven
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, S. Faas.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

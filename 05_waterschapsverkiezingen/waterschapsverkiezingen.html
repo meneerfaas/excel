@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+
+
+<html lang="nl" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Oefenopdracht Waterschapsverkiezingen &#8212; Werken met Excel 0.1 documentatie</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=103464f3" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=a57088fb"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=e4d38c6a"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '05_waterschapsverkiezingen/waterschapsverkiezingen';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="prev" title="Oefenopdracht Kanoën" href="../04_kanoen/kanoen.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="nl"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/excel_128.png" class="logo__image only-light" alt="Werken met Excel"/>
+    <img src="../_static/excel_128.png" class="logo__image only-dark pst-js-only" alt="Werken met Excel"/>
+  
+  
+    <p class="title logo__title">Werken met Excel</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../01_introduction/introduction.html">
+    Voorbereidingen
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../02_basics/basics.html">
+    Oefenopdracht Excel basics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../03_stroomsnelheid/stroomsnelheid.html">
+    Oefenopdracht Stroomsnelheid
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../04_kanoen/kanoen.html">
+    Oefenopdracht Kanoën
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Oefenopdracht Waterschapsverkiezingen
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Zoeken" aria-label="Zoeken" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Zoeken</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Zoeken" aria-label="Zoeken" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Zoeken</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../01_introduction/introduction.html">
+    Voorbereidingen
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../02_basics/basics.html">
+    Oefenopdracht Excel basics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../03_stroomsnelheid/stroomsnelheid.html">
+    Oefenopdracht Stroomsnelheid
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../04_kanoen/kanoen.html">
+    Oefenopdracht Kanoën
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Oefenopdracht Waterschapsverkiezingen
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Oefenopdracht Waterschapsverkiezingen</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="oefenopdracht-waterschapsverkiezingen">
+<h1>Oefenopdracht Waterschapsverkiezingen<a class="headerlink" href="#oefenopdracht-waterschapsverkiezingen" title="Link to this heading">#</a></h1>
+<img alt="Waterschap De Dommel" class="align-right" src="../_images/waterschap_de_dommel.png" style="width: 180px;" />
+<p>Op 15 maart 2023 waren er waterschapsverkiezingen. In deze opdracht verwerken we de uitslag voor Waterschap de Dommel in Excel en maken een cirkeldiagram.</p>
+<section id="werkblad">
+<h2>Werkblad<a class="headerlink" href="#werkblad" title="Link to this heading">#</a></h2>
+<p>Ook voor deze opdracht blijf je werken in het bestand <code class="file docutils literal notranslate"><span class="pre">02</span> <span class="pre">Dommel</span> <span class="pre">opdrachten.xlsx</span></code>. Zorg dat het werkblad <code class="docutils literal notranslate"><span class="pre">Waterschapsverkiezingen</span></code> actief is.</p>
+<img alt="Werkbladen" class="align-center" src="../_images/werkblad_waterschapsverkiezingen.png" style="width: 500px;" />
+</section>
+<section id="percentages-berekenen">
+<h2>Percentages berekenen<a class="headerlink" href="#percentages-berekenen" title="Link to this heading">#</a></h2>
+<p>In werkblad <code class="docutils literal notranslate"><span class="pre">Waterschapsverkiezingen</span></code> staat de uitslag van de waterschapsverkiezingen van 2023 en ter vergelijking ook die van 2019 voor Waterschap de Dommel. Om iets over het verschil tussen 2019 en 2023 te kunnen zeggen, is het nodig dat we het aantal stemmen omrekenen naar percentages. Zoals je weet bereken je een percentage met de formule:</p>
+<div class="math notranslate nohighlight">
+\[percentage = \frac{deel}{geheel} \times 100\%\]</div>
+<p>We hebben dus het <em>geheel</em> nodig. Dat is het totale aantal geldige stemmen. Uiteraard kan Excel dat voor je berekenen:</p>
+<ul class="simple">
+<li><p>Typ in cel A19 het woord Totaal.</p></li>
+<li><p>Typ in cel B19 <code class="docutils literal notranslate"><span class="pre">=SOM(</span></code> (het haakje openen is belangrijk) en selecteer vervolgens met de muis de cellen B6 t/m B18. Als je daarna op Enter drukt, staat in B19 de formule <code class="docutils literal notranslate"><span class="pre">=SOM(B6:B18)</span></code> die alle waarden in B6 t/m B18 optelt.</p></li>
+<li><p>Zet op dezelfde manier in cel C19 de formule die alle geldige stemmen in 2019 optelt (of nog sneller: kopieer de formule uit B19 naar C19).</p></li>
+<li><p>Selecteer de cellen A19 t/m C19 en maak de inhoud dikgedrukt.</p></li>
+</ul>
+<figure class="align-center" style="width: 200px">
+<img alt="../_images/celopmaak_bold.png" class="image-border" src="../_images/celopmaak_bold.png" />
+</figure>
+<ul class="simple">
+<li><p>Selecteer de cellen B19 en C19 en centreer de inhoud, zodat de getallen in het midden worden uitgelijnd in plaats van rechts.</p></li>
+</ul>
+<figure class="align-center" style="width: 300px">
+<img alt="../_images/celopmaak_center.png" class="image-border" src="../_images/celopmaak_center.png" />
+</figure>
+<p>Nu kunnen we de percentages van de partijen gaan berekenen:</p>
+<ul class="simple">
+<li><p>Typ in cel D5 de tekst <em>Percentage 2023</em> en in cel E5 <em>Percentage 2019</em>.</p></li>
+<li><p>In cel D6 moet de formule <code class="docutils literal notranslate"><span class="pre">=B6/B19</span></code> komen. We willen immers <span class="math notranslate nohighlight">\(\frac{deel}{geheel}\)</span> doen.</p></li>
+</ul>
+<p>Als je dit goed hebt gedaan, staat in D6 nu het getal 0,227528426. Dat is dus ongeveer 22,7% voor de partij Water Natuurlijk. Je vraagt je misschien af waarom we in D6 niet de formule <code class="docutils literal notranslate"><span class="pre">=B6/B19*100</span></code> hebben gezet, want de formule voor een percentage is toch <span class="math notranslate nohighlight">\(\frac{deel}{geheel} \times 100\%\)</span>. Daarover straks meer.</p>
+<p>In de cellen onder D6 moeten de percentages van de andere partijen komen. Kopieer de formule uit D6 (bijvoorbeeld met de vulgreep) naar beneden, en zie dat er foutmeldingen verschijnen:</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../_images/tabel_01.png" class="image-border" src="../_images/tabel_01.png" />
+</figure>
+<p>Als je de foutmelding niet goed kunt lezen, moet je de kolombreedte aanpassen. Dubbelklik op het scheidingsstreepje tussen de kolomkoppen D en E om dat automatisch te doen.</p>
+<p>Wanneer je dubbelklikt op cel D7, zie je wat er misgaat. Bij het kopiëren van de formule zijn de celverwijzingen mee opgeschoven. Los dit op door in de formule in cel D6 de verwijzing naar B19 te vergrendelen met de <kbd class="kbd docutils literal notranslate">F4</kbd>-toets (zie ook de <a class="reference internal" href="../04_kanoen/kanoen.html#celverwijzingen-vergrendelen"><span class="std std-ref">opdracht Kanoën</span></a>) en daarna opnieuw te kopiëren.</p>
+</section>
+<section id="getalnotatie">
+<h2>Getalnotatie<a class="headerlink" href="#getalnotatie" title="Link to this heading">#</a></h2>
+<p>Zoals eerder opgemerkt, staan in kolom D nog geen percentages, want we hebben de formule <span class="math notranslate nohighlight">\(\frac{deel}{geheel}\)</span> gebruikt in plaats van <span class="math notranslate nohighlight">\(\frac{deel}{geheel} \times 100\%\)</span>.</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../_images/tabel_02.png" class="image-border" src="../_images/tabel_02.png" />
+</figure>
+<p>Uiteraard hadden we de vermenigvuldiging met 100 in de formule kunnen verwerken, maar Excel heeft een betere manier:</p>
+<ul class="simple">
+<li><p>Selecteer de cellen D6 t/m D18.</p></li>
+<li><p>Klik in het lint (die brede knoppenbalk bovenin beeld) op de procentknop.</p></li>
+</ul>
+<figure class="align-center" style="width: 200px">
+<img alt="../_images/celopmaak_percentage.png" class="image-border" src="../_images/celopmaak_percentage.png" />
+</figure>
+<p>Excel toont de waarden in kolom D nu als percentages afgerond op gehelen. Wil je afronden op 1 decimaal, dan kan dat met de ‘meer decimalen’ knop:</p>
+<figure class="align-center" style="width: 200px">
+<img alt="../_images/celopmaak_decimalen.png" class="image-border" src="../_images/celopmaak_decimalen.png" />
+</figure>
+<p>Probeer nu zelf in kolom E de percentages van 2019 te berekenen.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-info sd-bg-text-info">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-info" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span><span class="sd-summary-text">Rechtermuisknop</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In Excel bevinden veel handige functies zich ook onder de rechtermuisknop. Selecteer de cellen D6 t/m D18 en klik daarna met de rechtermuisknop in je selectie. Kies vervolgens voor <span class="guilabel">Celeigenschappen</span>. Je kunt dan de getalnotatie instellen en nog veel meer.</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../_images/celeigenschappen.png" src="../_images/celeigenschappen.png" />
+</figure>
+</div>
+</details><p>Je zou nu de volgende tabel moeten hebben:</p>
+<figure class="align-center" style="width: 800px">
+<img alt="../_images/tabel_03.png" class="image-border" src="../_images/tabel_03.png" />
+</figure>
+</section>
+<section id="procentuele-toe-of-afname">
+<h2>Procentuele toe- of afname<a class="headerlink" href="#procentuele-toe-of-afname" title="Link to this heading">#</a></h2>
+<p>Bij verkiezingsuitslagen wordt altijd aangegeven of een partij meer of minder stemmen heeft gekregen dan de vorige keer. Dat gaan wij natuurlijk ook doen:</p>
+<ul class="simple">
+<li><p>Typ in cel F5 het woord <em>Verschil</em>.</p></li>
+<li><p>Zet in cel F6 de formule <code class="docutils literal notranslate"><span class="pre">=D6-E6</span></code>.</p></li>
+<li><p>Kopieer deze formule naar de cellen F7 t/m F18.</p></li>
+</ul>
+<p>Het resultaat zou er zo moeten uitzien:</p>
+<figure class="align-center" style="width: 350px">
+<img alt="../_images/tabel_04.png" class="image-border" src="../_images/tabel_04.png" />
+</figure>
+<p>Maar wacht eens even, procentuele verandering berekenen we toch op een andere manier? De formule die je hebt geleerd is</p>
+<div class="math notranslate nohighlight">
+\[\text{procentuele verandering} = \frac{\text{NIEUW} - \text{OUD}}{\text{OUD}} \times 100\%\]</div>
+<p>Wat zijn dan de percentages die nu in kolom F staan? Dat zijn de <em>absolute</em> verschillen tussen de percentages in 2019 en 2023, niet de <em>relatieve</em>. Dit moeten we duidelijk aangeven. En laten we dan ook meteen de relatieve veranderingen berekenen.</p>
+<ul class="simple">
+<li><p>Wijzig de tekst in cel F5 naar <em>Verschil absoluut</em>.</p></li>
+<li><p>Typ in cel G5 de tekst <em>Verschil relatief</em>.</p></li>
+<li><p>Zet in cel G6 de formule <code class="docutils literal notranslate"><span class="pre">=(D6-E6)/E6</span></code>.</p></li>
+<li><p>Kopieer de formule in G6 naar de cellen G7 t/m G18.</p></li>
+</ul>
+<p>In de cellen G13 t/m G16 verschijnen foutmeldingen. Dat komt doordat deze partijen in 2019 niet meededen aan de verkiezingen en dus 0 stemmen behaalden. Delen door 0 mag niet. Verwijder de formules uit deze cellen.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-info sd-bg-text-info">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-info" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span><span class="sd-summary-text">Procentpunten</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Een absoluut verschil tussen percentages mag je eigenlijk niet in procenten weergeven. De juiste eenheid voor zo’n verschil is de <em>procentpunt</em> (pp of %-punt). In 2023 was het aantal stemmen voor Water Natuurlijk dus met 9 %-punt gedaald ten opzichte van 2019 en dat komt overeen met een afname van 28%.</p>
+</div>
+</details><p>Je tabel zou er nu zo moeten uitzien:</p>
+<figure class="align-center" style="width: 800px">
+<img alt="../_images/tabel_05.png" class="image-border" src="../_images/tabel_05.png" />
+</figure>
+<p>Kun je nu uitspraken doen over welke partij het meest heeft gewonnen en welke het meest verloren bij deze verkiezingen?</p>
+</section>
+<section id="cirkeldiagram-invoegen">
+<h2>Cirkeldiagram invoegen<a class="headerlink" href="#cirkeldiagram-invoegen" title="Link to this heading">#</a></h2>
+<p>Ter afsluiting van deze opdracht maken we een cirkeldiagram bij de verkiezingsuitslagen van 2023. We gebruiken hiervoor kolom A en kolom D, zodat een diagram wordt gemaakt bij de percentages. Ga als volgt te werk:</p>
+<ul class="simple">
+<li><p>Selecteer de cellen A5 t/m A18.</p></li>
+<li><p>Houd de <kbd class="kbd docutils literal notranslate">Ctrl</kbd>-toets ingedrukt en selecteer vervolgens cellen D5 t/m D18.</p></li>
+<li><p>Ga in de menubalk naar <span class="guilabel">Invoegen</span> en klik op het icoontje van het cirkeldiagram. Kies bij <span class="guilabel">2D-cirkel</span> de eerste optie.</p></li>
+</ul>
+<p>Het cirkeldiagram wordt ingevoegd, maar ziet er nog niet heel mooi uit. Doe in elk geval het volgende:</p>
+<ul class="simple">
+<li><p>Selecteer het diagram en klik op het ➕ knopje dat rechtsboven het diagram verschijnt.</p></li>
+<li><p>De legenda staat momenteel onder het diagram. Verplaats hem naar rechts:</p></li>
+</ul>
+<figure class="align-center" style="width: 350px">
+<img alt="../_images/legenda.png" class="image-border" src="../_images/legenda.png" />
+</figure>
+<ul class="simple">
+<li><p>Vink ook Gegevenslabels aan om de percentages in het diagram te tonen.</p></li>
+<li><p>Maak het diagramgebied wat groter zodat alle partijen in de legenda zichtbaar zijn.</p></li>
+<li><p>Verander de titel van het diagram in <em>Waterschapsverkiezingen 2023</em> en op de tweede regel in kleinere letters <em>Waterschap de Dommel</em>.</p></li>
+</ul>
+<p>Als het goed is, heb je nu ongeveer het volgende diagram:</p>
+<figure class="align-center" style="width: 600px">
+<img alt="../_images/cirkeldiagram.png" class="image-border" src="../_images/cirkeldiagram.png" />
+</figure>
+<p>Uiteraard mag je het diagram naar eigen smaak verfraaien.</p>
+<p>Dit is het einde van de laatste oefenopdracht. In het projectboekje vind je de eindopdracht die je samen met je groepje gaat maken.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../04_kanoen/kanoen.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">vorige</p>
+        <p class="prev-next-title">Oefenopdracht Kanoën</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkblad">Werkblad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentages-berekenen">Percentages berekenen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getalnotatie">Getalnotatie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procentuele-toe-of-afname">Procentuele toe- of afname</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cirkeldiagram-invoegen">Cirkeldiagram invoegen</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/05_waterschapsverkiezingen/waterschapsverkiezingen.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Broncode weergeven
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, S. Faas.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
