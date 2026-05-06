@@ -48,6 +48,7 @@ html_theme_options = {
 }
 html_favicon = "_static/favicon.png"
 html_sidebars = {"**": []}
+html_scaled_image_link = False
 
 # -- Options for plantuml
 local_plantuml_path = os.path.join(os.path.dirname(

@@ -8,6 +8,15 @@ Oefenopdracht Kanoën
 
 De Dommel is een populaire beek onder kanovaarders. Om de natuur in en om het water te beschermen hanteert het waterschap normen voor het maximale aantal kano's dat per dag op een bepaald gedeelte van de Dommel mag varen. In deze opdracht verwerken we tellingen in Excel in een frequentietabel en maken daar een histogram bij.
 
+Werkblad
+---------------------------------------
+Let op: voor deze opdracht blijf je werken in het bestand :file:`02 Dommel opdrachten.xlsx`. Zorg dat het werkblad ``Kanoën`` actief is.
+
+.. image:: images/werkblad_kanoen.png
+   :alt: Werkbladen
+   :width: 500px
+   :align: center
+
 Kolombreedte aanpassen
 ---------------------------------------
 Kasper en Nora lopen stage bij het waterschap en hebben een dag van 8.00 uur tot 20.00 uur bij de brug bij de Ruwenberg gezeten om te tellen hoeveel kano's voorbij voeren. Ze werkten daarbij met blokken van een kwartier. In werkblad ``Opdracht 3`` vind je de resultaten.
@@ -17,6 +26,10 @@ Kasper en Nora lopen stage bij het waterschap en hebben een dag van 8.00 uur tot
    :align: center
 
 Je ziet dat de tijdblokken niet helemaal zichtbaar zijn, doordat kolom A eigenlijk te smal is. Pas dit aan door met de muiscursor op het verticale streepje tussen de kolomtitels A en B te gaan staan. De cursor verandert dan in een dubbele pijl. Sleep het streepje naar rechts om kolom A breder te maken.
+
+.. figure:: images/column_width.gif
+   :align: center
+   :class: image-border
 
 .. dropdown:: Kolom automatisch passend maken
    :color: info

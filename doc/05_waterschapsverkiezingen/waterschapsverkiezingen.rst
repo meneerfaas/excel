@@ -8,6 +8,15 @@ Oefenopdracht Waterschapsverkiezingen
 
 Op 15 maart 2023 waren er waterschapsverkiezingen. In deze opdracht verwerken we de uitslag voor Waterschap de Dommel in Excel en maken een cirkeldiagram.
 
+Werkblad
+---------------------------------------
+Ook voor deze opdracht blijf je werken in het bestand :file:`02 Dommel opdrachten.xlsx`. Zorg dat het werkblad ``Waterschapsverkiezingen`` actief is.
+
+.. image:: images/werkblad_waterschapsverkiezingen.png
+   :alt: Werkbladen
+   :width: 500px
+   :align: center
+
 Percentages berekenen
 -------------------------
 
@@ -50,7 +59,7 @@ In de cellen onder D6 moeten de percentages van de andere partijen komen. Kopiee
 
 Als je de foutmelding niet goed kunt lezen, moet je de kolombreedte aanpassen. Dubbelklik op het scheidingsstreepje tussen de kolomkoppen D en E om dat automatisch te doen.
 
-Wanneer je dubbelklikt op cel D7, zie je wat er misgaat. Bij het kopiëren van de formule zijn de celverwijzingen mee opgeschoven. Los dit op door in de formule in cel D6 de verwijzing naar B19 te vergrendelen met de :kbd:`F4`-toets (zie ook de :ref:`opdracht Kanoën <cellen_vergrendelen>`) en daarna opnieuw te kopiëren.
+Wanneer je dubbelklikt op cel D7, zie je wat er misgaat. Bij het kopiëren van de formule zijn de celverwijzingen mee opgeschoven. Los dit op door in de formule in cel D6 de verwijzing naar B19 te vergrendelen met de :kbd:`F4`-toets (zie ook de :ref:`opdracht Kanoën <celverwijzingen_vergrendelen>`) en daarna opnieuw te kopiëren.
 
 Getalnotatie
 -------------------------

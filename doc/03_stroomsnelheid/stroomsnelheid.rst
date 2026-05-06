@@ -12,11 +12,11 @@ Op de `website van Natuurmonumenten <https://www.natuurmonumenten.nl/natuurgebie
 
 Werkbladen
 ---------------------------------------
-Je kunt het bestand :file:`01 Excel basis.xlsx`` uit de vorige opdracht sluiten. Open nu het bestand :file:`02 Dommel opdrachten.xlsx`. Een bestand wordt in Excel een *werkmap* genoemd. In die werkmap bevinden zich *werkbladen*. Onderin je scherm zie je de tabbladen staan waarmee je tussen de werkbladen kunt schakelen. Zorg dat voor deze opdracht werkblad ``Opdracht 2`` actief is.
+Je kunt het bestand :file:`01 Excel basis.xlsx`` uit de vorige opdracht sluiten. Open nu het bestand :file:`02 Dommel opdrachten.xlsx`. Een bestand wordt in Excel een *werkmap* genoemd. In die werkmap bevinden zich *werkbladen*. Onderin je scherm zie je de tabbladen staan waarmee je tussen de werkbladen kunt schakelen. Zorg dat voor deze opdracht werkblad ``Stroomsnelheid`` actief is.
 
-.. image:: images/werkbladen.png
+.. image:: images/werkblad_stroomsnelheid.png
    :alt: Werkbladen
-   :width: 400px
+   :width: 500px
    :align: center
 
 Data invoeren
