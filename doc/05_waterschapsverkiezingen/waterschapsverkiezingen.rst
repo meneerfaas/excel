@@ -20,7 +20,7 @@ Ook voor deze opdracht blijf je werken in het bestand :file:`02 Dommel opdrachte
 Percentages berekenen
 -------------------------
 
-In werkblad ``Opdracht 4`` staat de uitslag van de waterschapsverkiezingen van 2023 en ter vergelijking ook die van 2019 voor Waterschap de Dommel. Om iets over het verschil tussen 2019 en 2023 te kunnen zeggen, is het nodig dat we het aantal stemmen omrekenen naar percentages. Zoals je weet bereken je een percentage met de formule:
+In werkblad ``Waterschapsverkiezingen`` staat de uitslag van de waterschapsverkiezingen van 2023 en ter vergelijking ook die van 2019 voor Waterschap de Dommel. Om iets over het verschil tussen 2019 en 2023 te kunnen zeggen, is het nodig dat we het aantal stemmen omrekenen naar percentages. Zoals je weet bereken je een percentage met de formule:
 
 .. math:: percentage = \frac{deel}{geheel} \times 100\%
 
